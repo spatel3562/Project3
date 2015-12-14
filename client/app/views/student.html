@@ -1,6 +1,6 @@
 <a class="btn btn-success" href="/#/create/student"><span class="glyphicon glyphicon-education"></span> Add Student</a>
 <br>
-<table class="table table-striped">
+<table class="table table-hover">
   <thead>
   <th>Name</th>
   <th>StudentID</th>
@@ -9,7 +9,7 @@
   </thead>
   <tbody>
 
-  <tr ng-repeat="student in student">
+  <tr ng-repeat="student in student" class="info">
     <td><a ng-href="/#/student/{{ student._id }}">{{ student.Name }}</a></td>
     <td>{{ student.StudentID }}</td>
     <td>{{ student.CourseID }}</td>
