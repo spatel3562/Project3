@@ -1,0 +1,24 @@
+<a class="btn btn-success" href="/#/create/student"><span class="glyphicon glyphicon-education"></span> Add Student</a>
+<br>
+<table class="table table-striped">
+  <thead>
+  <th>Name</th>
+  <th>StudentID</th>
+  <th>CourseID</th>
+  <th>Operations</th>
+  </thead>
+  <tbody>
+
+  <tr ng-repeat="student in student">
+    <td><a ng-href="/#/student/{{ student._id }}">{{ student.Name }}</a></td>
+    <td>{{ student.StudentID }}</td>
+    <td>{{ student.CourseID }}</td>
+    <td>
+      <div class="button-group">
+        <a ng-href="/#/student/{{ student._id }}/edit" class="btn btn-default"><span class="glyphicon glyphicon-share-alt"></span>Edit</a>
+        <a ng-href="/#/student/{{ student._id }}/delete" class="btn btn-danger"><span class="glyphicon glyphicon-remove-circle"></span> Delete</a>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>

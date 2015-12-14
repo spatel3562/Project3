@@ -1,0 +1,15 @@
+<form role="form">
+  <div class="form-group">
+    <label for="Name" class="control-label">Name</label>
+    <input type="text" ng-model="student.Name" class="form-control" id="Name" placeholder="Enter Student Name"/>
+  </div>
+  <div class="form-group">
+    <label for="StudentID" class="control-label">StudentID</label>
+    <input type="text" ng-model="student.StudentID" class="form-control" id="StudentID" placeholder="Enter the Student ID"/>
+  </div>
+  <div class="form-group">
+    <label for="CourseID" class="control-label">CourseID</label>
+    <input type="text" ng-model="student.CourseID" class="form-control" id="CourseID" placeholder="Enter the Course ID"/>
+  </div>
+  <input type="submit" class="btn btn-primary" ng-click="saveStudent()" value="Save"/>
+</form>
